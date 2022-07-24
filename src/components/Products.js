@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import Discounted from './Discounted'
+import Latest from './Latest'
 import Slider from './Slider'
 
 function Products() {
@@ -8,6 +10,8 @@ function Products() {
     <Section>
         <Container>
           <Slider />
+          <Latest />
+          <Discounted />
         </Container>
     </Section>
   )

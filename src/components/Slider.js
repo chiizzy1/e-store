@@ -1,11 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 
+const   Cards = []
 
 function Slider() {
   return (
     <Carousel>
-        <h1>hello</h1>
+        {Cards}
     </Carousel>
   )
 }

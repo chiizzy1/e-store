@@ -16,8 +16,9 @@ function Navbar() {
                     <li>Services</li> 
                     
                     {/* <Button variant="contained">Hello World</Button> */}
+                    <CartIcon />
                 </Ul>
-                <ShoppingCartIcon />
+
             </Nav>
         </Container>
     </Header>
@@ -45,10 +46,14 @@ const Nav = styled.nav`
     justify-content: space-between;
     overflow-x: hidden;
     color: black;
+    font-size: 1.1rem;
+    letter-spacing: .1rem;
     // padding: 1.5em 0;
 `
 
-const Logo = styled.span``
+const Logo = styled.span`
+    cursor: pointer;
+`
 
 
 const Ul = styled.ul`
@@ -58,7 +63,11 @@ const Ul = styled.ul`
     li{
         list-style: none;
         padding: 0 2em;
+        cursor: pointer;
         // border-bottom: 1px solid rgba(0,0,0,.2);
     }
 `
-
+const CartIcon = styled(ShoppingCartIcon)`
+    color: red;
+    cursor: pointer;
+`
