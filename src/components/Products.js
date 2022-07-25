@@ -2,14 +2,14 @@ import React from 'react'
 import styled from 'styled-components'
 import Discounted from './Discounted'
 import Latest from './Latest'
-import Slider from './Slider'
+import SliderImg from './SliderImg'
 
 function Products() {
   
   return (
     <Section>
         <Container>
-          <Slider />
+          <SliderImg />
           <Latest />
           <Discounted />
         </Container>
@@ -20,7 +20,7 @@ function Products() {
 export default Products
 
 const Section = styled.section`
-  background: blue;
+  background: cyan;
 `
 
 const Container = styled.div`

@@ -16,7 +16,7 @@ export default Footer
 
 
 const Section  = styled.section`
-    background: darkgreen;
+    background: #fff3f3;
 `
 
 const Container = styled.div`

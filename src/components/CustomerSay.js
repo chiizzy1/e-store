@@ -15,6 +15,7 @@ export default CustomerSay
 
 const Section  = styled.section`
     background: lightgreen;
+    padding: 1.5em 0;
 `
 
 const Container = styled.div`
