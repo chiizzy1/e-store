@@ -60,7 +60,7 @@ function SliderImg() {
 
   const cards = allProducts.map(item => {
     return(
-      <ProductCard 
+       <ProductCard 
           category={item.category}
           price={item.price}
           stocked={item.stocked} 
@@ -74,20 +74,39 @@ function SliderImg() {
   
   
   return (
-    <Carousel  {...settings}>
+    <>
+      <Heading>
+          <p>Collection</p>
+          <h3>Our Top Collection</h3>
+      </Heading>
+
+      <Carousel  {...settings}>
         {cards}
-    </Carousel>
+      </Carousel>
+    </>
   )
 }
 
 export default SliderImg
 
-const Carousel = styled(Slider)`
-  padding: 1.5em 0;
-    
-  .slick-slide {
-      margin: 0 10px;
+const Heading = styled.div`
+  padding: 2em 0;
+  color: #000;
+  text-align: center;
+  p{
+    font-size: .8em;
   }
+  h3{
+    font-weight: bold;
+  }
+`
+
+const Carousel = styled(Slider)`
+  // padding: 1.5em 0;
+    
+  // .slick-slide {
+  //     margin: 0 10px;
+  // }
 
   // .slick-list {
   //     margin: 0 -10px;

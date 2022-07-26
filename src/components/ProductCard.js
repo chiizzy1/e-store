@@ -22,7 +22,7 @@ function ProductCard({category, price, stocked, name, image, rating, description
 export default ProductCard
 
 const Wrap = styled.div`
-  width: 100%;
+  // width: 100%;
   border: 2px solid red;
   height: 300px;
   overflow-x: hidden;
