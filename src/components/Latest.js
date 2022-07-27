@@ -8,6 +8,32 @@ function Latest() {
             <p> New Arrival</p>
             <h3>Latest Collection</h3>
         </Heading>
+
+        <Cards>
+          <Div>
+            <Card1>
+            OFFWHITE x AIRFORCE 1New  LUXURY NAKED WOLFE Sneakers 🔥🔥🔥🔥
+          OFFWHITE x AIRFORCE 1New  LUXURY NAKED WOLFE Sneakers 🔥🔥🔥🔥
+          OFFWHITE x AIRFORCE 1New  LUXURY NAKED WOLFE Sneakers 🔥🔥🔥🔥
+          OFFWHITE x AIRFORCE 1New  LUXURY NAKED WOLFE Sneakers 🔥🔥🔥🔥
+            </Card1>
+
+            <Card2>
+            OFFWHITE x AIRFORCE 1New  LUXURY NAKED WOLFE Sneakers 🔥🔥🔥🔥
+          OFFWHITE x AIRFORCE 1New  LUXURY NAKED WOLFE Sneakers 🔥🔥🔥🔥
+          OFFWHITE x AIRFORCE 1New  LUXURY NAKED WOLFE Sneakers 🔥🔥🔥🔥
+          OFFWHITE x AIRFORCE 1New  LUXURY NAKED WOLFE Sneakers 🔥🔥🔥🔥
+            </Card2>
+          </Div>
+
+          <Card3>c
+          OFFWHITE x AIRFORCE 1New  LUXURY NAKED WOLFE Sneakers 🔥🔥🔥🔥
+          OFFWHITE x AIRFORCE 1New  LUXURY NAKED WOLFE Sneakers 🔥🔥🔥🔥
+          OFFWHITE x AIRFORCE 1New  LUXURY NAKED WOLFE Sneakers 🔥🔥🔥🔥
+          OFFWHITE x AIRFORCE 1New  LUXURY NAKED WOLFE Sneakers 🔥🔥🔥🔥
+          </Card3>
+
+        </Cards>
     </Container>
   )
 }
@@ -30,4 +56,27 @@ const Heading = styled.div`
   h3{
     font-weight: bold;
   }
+`
+
+
+const Cards = styled.div`
+  display: flex;
+  gap: 5em;
+`
+
+const Div = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+`
+
+const Card1 = styled.div`
+  background: orange;
+`
+
+const Card2 = styled.div`
+  background: red;
+`
+const Card3 = styled.div`
+  background: green;
 `

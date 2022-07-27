@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import SupportAgentIcon from '@mui/icons-material/SupportAgent';
 
 function Statistics() {
   return (
@@ -9,6 +10,33 @@ function Statistics() {
               <p>Statistics</p>
               <h3>Our Statistics</h3>
             </Heading>
+
+            <Wrap>
+              <Div>
+                <Icon />
+                <h4>Easy Order System</h4>
+                <p>Shopping online has never been easier</p>
+              </Div>
+
+              <Div>
+                <Icon />
+                <h4>On Time Delivery</h4>
+                <p>We know how precious time is so we deliver promptly</p>
+              </Div>
+
+              <Div>
+                <Icon />
+                <h4>100% Money Back Guarantee</h4>
+                <p>Have any complaint about our product? get your money back with ease.</p>
+              </Div>
+
+              <Div>
+                <Icon />
+                  <h3>24/7 Online Support</h3>
+                  <p>We're always here to take your order and resolve any issues</p>
+              </Div>
+
+            </Wrap>
             
         </Container>
     </Section>
@@ -39,6 +67,19 @@ const Heading = styled.div`
   }
 `
 
-const Icon = styled.div`
+const Wrap = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
+
+const Div = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`
+
+const Icon = styled(SupportAgentIcon)`
   background: #dd518d;
 `
