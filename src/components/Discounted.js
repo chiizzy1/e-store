@@ -3,7 +3,9 @@ import styled from 'styled-components'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import promo from './PromoProducts';
 import DiscountCard from './DiscountCard';
+import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
 function Discounted() {
 
@@ -22,19 +24,19 @@ function Discounted() {
 
   
 
-  // const cards = allProducts.map(item => {
-  //   return(
-  //      <DiscountCard 
-  //         category={item.category}
-  //         price={item.price}
-  //         stocked={item.stocked} 
-  //         name={item.name} 
-  //         image={item.image} 
-  //         rating={item.rating}
-  //         description={item.description}
-  //     />
-  //   )
-  // })
+  const cards = promo.map(item => {
+    return(
+       <DiscountCard 
+          category={item.category}
+          price={item.price}
+          stocked={item.stocked} 
+          name={item.name} 
+          image={item.image} 
+          rating={item.rating}
+          description={item.description}
+      />
+    )
+  })
   return (
     <Container>
       <Heading>
@@ -43,34 +45,12 @@ function Discounted() {
       </Heading>
 
       <Carousel  {...settings}>
-      <div>
-            <h3>1</h3>
-          </div>
-          <div>
-            <h3>2</h3>
-          </div>
-          <div>
-            <h3>3</h3>
-          </div>
-          <div>
-            <h3>4</h3>
-          </div>
-          <div>
-            <h3>5</h3>
-          </div>
-          <div>
-            <h3>6</h3>
-          </div>
-          <div>
-            <h3>7</h3>
-          </div>
-          <div>
-            <h3>8</h3>
-          </div>
-          <div>
-            <h3>9</h3>
-          </div>
+          {cards}
       </Carousel>
+
+      <Div>
+        <MoreProducts  href='#'>Load More <Arrow /> </MoreProducts>
+      </Div>
     </Container>
   )
 }
@@ -107,4 +87,26 @@ const Heading = styled.div`
 
 const Card = styled.div`
   background: #fff3f3;
+`
+const Div = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
+const MoreProducts = styled.a`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2em 0;
+    width: 14em;
+    padding: .5em 0;
+    background: #eb5394;
+    color: aliceblue;
+    border-radius: 5px;
+    text-align: center;
+`
+
+const Arrow = styled(NavigateNextIcon)`
+
 `

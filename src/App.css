@@ -9,3 +9,7 @@
   font-family: 'Rubik', sans-serif;
 }
 
+html{
+  scroll-behavior: smooth;
+  transition: all .3s ease-in-out;
+}

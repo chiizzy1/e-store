@@ -7,7 +7,7 @@ function DiscountCard({category, price, stocked, name, image, rating, descriptio
     
     return (
       <Wrap>
-        {/* <Image>
+        <Image>
             <img src={image} alt="product" />
         </Image>
         <p>{description}</p>
@@ -15,7 +15,7 @@ function DiscountCard({category, price, stocked, name, image, rating, descriptio
         <Flex>
           <AddToCart>Add to Cart</AddToCart>
           <span>{price}</span>
-        </Flex> */}
+        </Flex>
       </Wrap>
     )
   }
