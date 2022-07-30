@@ -20,7 +20,10 @@ function Footer() {
               <h3>Clasic <span>Wears</span></h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, ad?</p>
               <SocialIcons>
-
+                <FacebookIcon />
+                <InstagramIcon />
+                <TwitterIcon />
+                <WhatsAppIcon />
               </SocialIcons>
             </BoxA>
 
