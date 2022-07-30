@@ -105,6 +105,13 @@ const MoreProducts = styled.a`
     color: aliceblue;
     border-radius: 5px;
     text-align: center;
+
+    &:hover{
+      // background: none;
+      // color: black;
+      // border: 1px solid black;
+      gap: 1em;
+    }
 `
 
 const Arrow = styled(NavigateNextIcon)`

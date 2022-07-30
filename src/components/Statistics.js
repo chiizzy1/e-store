@@ -17,26 +17,30 @@ function Statistics() {
 
             <Wrap>
               <Div>
-                <IconA />
+                <IconCase><IconA /></IconCase>
+                
                 <h4>Easy Order System</h4>
                 <p>Shopping online has never been easier</p>
               </Div>
 
               <Div>
-                <IconB />
+                <IconCase><IconB /></IconCase>
+                
                 <h4>On Time Delivery</h4>
                 <p>We know how precious time is so we deliver promptly</p>
               </Div>
 
               <Div>
-                <IconC />
+                <IconCase><IconC /></IconCase>
+                
                 <h4>100% Money Back Guarantee</h4>
                 <p>Have any complaint about our product? get your money back with ease.</p>
               </Div>
 
               <Div>
-                <IconD />
-                  <h3>24/7 Online Support</h3>
+                <IconCase><IconD /></IconCase>
+                
+                  <h4>24/7 Online Support</h4>
                   <p>We're always here to take your order and resolve any issues</p>
               </Div>
 
@@ -75,24 +79,41 @@ const Wrap = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 2em;
+  margin-bottom: 2em;
 `
 
 const Div = styled.div`
+  width: 20%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
+
+  h4{
+    padding: .4em 0 .8em 0;
+  }
+`
+
+const IconCase = styled.div`
+  background: #dd518d;
+  padding: 7px;
 `
 
 const IconA = styled(CreditScoreIcon)`
-  background: #dd518d;
+  color: #fff;
+  font-size: 2em;
 `
 const IconB = styled(PriceCheckIcon)`
-  background: #dd518d;
+  color: #fff;
+  font-size: 2em;
 `
 const IconC = styled(LocalShippingIcon)`
-  background: #dd518d;
+  color: #fff;
+  font-size: 2em;
 `
 const IconD = styled(SupportAgentIcon)`
-  background: #dd518d;
+  color: #fff;
+  font-size: 2em;
 `
