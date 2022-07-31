@@ -64,9 +64,9 @@ function Footer() {
 
               <div>
                 <h3>Contact Info</h3>
-                <span>Somewhere on milky way galaxy</span>
-                <span>classic@wears.com</span>
-                <span>0123456789</span>
+                <span> <LocationOnIcon/> Somewhere on milky way galaxy</span>
+                <span> <MailIcon/> classic@wears.com</span>
+                <span> <CallIcon/> 0123456789</span>
               </div>
               
               <div>
