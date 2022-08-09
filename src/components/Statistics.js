@@ -59,7 +59,7 @@ const Section  = styled.section`
 `
 
 const Container = styled.div`
-    width: 85%;
+    width: 75%;
     max-width: 1240px;
     margin: 0 auto;
 `
@@ -76,15 +76,13 @@ const Heading = styled.div`
 `
 
 const Wrap = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2em;
+  display: grid;
+  gap: 3em;
+  grid-template-columns: repeat( auto-fit, minmax(220px, auto) );
   margin-bottom: 2em;
 `
 
 const Div = styled.div`
-  width: 20%;
   display: flex;
   flex-direction: column;
   align-items: center;

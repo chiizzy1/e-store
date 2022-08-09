@@ -64,9 +64,9 @@ function Footer() {
 
               <div>
                 <h3>Contact Info</h3>
-                <span> <LocationOnIcon/> Somewhere on milky way galaxy</span>
-                <span> <MailIcon/> classic@wears.com</span>
-                <span> <CallIcon/> 0123456789</span>
+                <div> <span><LocationOnIcon/></span>  Somewhere on milky way galaxy</div><br />
+                <div> <span><MailIcon/></span>  classic@wears.com</div><br />
+                <div> <span><CallIcon/></span>  0123456789</div><br />
               </div>
               
               <div>
@@ -100,12 +100,14 @@ const Box = styled.div`
   padding: 2em 0;
   display: grid;
   gap: 25px;
-  grid-template-columns: repeat( auto-fit, minmax(200px, auto) );
+  grid-template-columns: repeat( auto-fit, minmax(220px, auto) );
 `
 
 const BoxA = styled.div``
 
-const SocialIcons = styled.div``
+const SocialIcons = styled.div`
+  color: #eb5394;
+`
 
 const BoxB = styled.div``
 
@@ -113,4 +115,8 @@ const BoxC = styled.div``
 
 const BoxD = styled.div``
 
-const BoxE = styled.div``
+const BoxE = styled.div`
+  span{
+    color: #eb5394;
+  }
+`

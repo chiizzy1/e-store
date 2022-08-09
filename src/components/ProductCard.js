@@ -25,14 +25,14 @@ const Wrap = styled.div`
   // width: 100%;
   border: 2px solid red;
   height: 300px;
-  overflow-x: hidden;
+  overflow: hidden;
   background: #fff3f3;
-  // padding: 0 1em;
+  padding: 1em;
 `
 
 const Image = styled.div`
-  width: 100%;
-  height: 190px;
+  width: 90%;
+  height: 150px;
 
   img{
     width: 100%;
@@ -45,14 +45,15 @@ const Flex = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding:.5em  0;
 `
 
 const AddToCart = styled.button`
   // width: 45px;
   color: #fff;
   background: #eb5394;
-  height: 20px;
   text-align: center;
   font-size: .5rem;
   padding: .3em 1em;
+  outline: none;
 `
