@@ -13,7 +13,7 @@ function ProductCard({category, price, stocked, name, image, rating, description
       <span>{rating}</span>
       <Flex>
         <AddToCart>Add to Cart</AddToCart>
-        <span>{price}</span>
+        <p className='price'>{price}</p>
       </Flex>
     </Wrap>
   )
@@ -28,6 +28,11 @@ const Wrap = styled.div`
   overflow: hidden;
   background: #fff3f3;
   padding: 1em;
+  // box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px, rgb(0 0 0 / 73%) 0px 16px 10px -10px;
+
+  span{
+    font-size: 12px;
+  }
 `
 
 const Image = styled.div`
@@ -46,6 +51,11 @@ const Flex = styled.div`
   justify-content: space-between;
   align-items: center;
   padding:.5em  0;
+
+  .price{
+    font-weight: bold;
+    font-size: 1.4em;
+  }
 `
 
 const AddToCart = styled.button`
@@ -54,6 +64,10 @@ const AddToCart = styled.button`
   background: #eb5394;
   text-align: center;
   font-size: .5rem;
-  padding: .3em 1em;
+  padding: .4em 3em;
   outline: none;
+    border-radius: 4px;
+    font-size: 16px;                     
+    cursor: pointer;
+    
 `

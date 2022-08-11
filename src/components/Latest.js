@@ -62,6 +62,10 @@ const Heading = styled.div`
 const Cards = styled.div`
   display: flex;
   gap: 5em;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
 `
 
 const Div = styled.div`
