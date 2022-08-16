@@ -17,6 +17,7 @@ function Navbar() {
                     
                     {/* <Button variant="contained">Hello World</Button> */}
                     <CartIcon />
+
                 </Ul>
 
             </Nav>
