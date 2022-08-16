@@ -11,7 +11,7 @@ function UserCard({firstName, lastName, city, img}) {
             <Detail>
                 <Image src={img} />
                 <div>
-                    <h4>{`${firstName} ${lastName}`}</h4>
+                    <h4>{`${firstName}`}</h4>
                     <p>{city}</p>
                 </div>
             </Detail>
